@@ -4,13 +4,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
-        double sum =0;
-        for (int i = 1 ;i<=n ; i++){
-            double b ;
-            double a=1;
-            b = a/((2*i-1)*(2*i));
-            sum = sum+b;
+        for (int  i= 1 ; i<=n; i++){
+            if (n%i==0){
+                System.out.println(i);
+            }
         }
-        System.out.println(sum);
     }
 }
